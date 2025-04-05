@@ -64,6 +64,35 @@ pipette = Pipette(<index>, <name>, <tip_rack>, <config_file>)  # instantiate you
 m.load_tool(pipette)                                           # configure the pipette for use on the machine
 ...
 ```
+## Automated System for in situ Crystallization
+
+In this section, we describe our approach to automating in situ crystallization experiments. By integrating a microfluidic flow cell, temperature control, and imaging tools, the system can run crystallization trials and monitor them in real time without manual intervention.
+
+### Overview & Workflow
+
+1. **Reagent Loading:** The system draws solutions from multiple reservoirs using a syringe or pipette tool.  
+2. **Injection & Mixing:** Fluids are injected into the microfluidic flow cell where they mix under controlled conditions.  
+3. **Real-time Imaging:** A microscope or camera captures images of the crystallization process at specified intervals.  
+4. **Data Logging & Analysis:** Automated software logs temperature, time, and reagent conditions. Collected images are processed to detect nucleation and crystal growth rates.
+
+
+### Implementation Details
+
+- **Hardware:**  
+  - Microfluidic flow cell  
+  - Temperature control stage  
+  - Reservoirs for reagent solutions  
+  - Jubilee motion system with syringe or pipette tool
+
+- **Software & Control:**  
+  - `science_jubilee` for motion and tool control  
+  - Python scripts or Jupyter notebooks for automated experiment scheduling  
+  - Image processing pipeline for crystal detection
+
+- **Future Directions:**  
+  - Integration with advanced machine learning to optimize crystallization conditions in real time  
+  - Enhanced feedback loops for controlling mixing ratios, temperature, and flow rates
+
 
 ## Attribution
 
