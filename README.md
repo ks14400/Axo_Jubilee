@@ -65,10 +65,14 @@ m.load_tool(pipette)                                           # configure the p
 ...
 ```
 
+## Attribution
 
-<!-- pyscaffold-notes -->
+### Machine Agency
+This project is powered by the Machine Agency run by **Dr. Nadya Peek**.
 
-## Note
+### Contributors
+- **Blair Subbaraman** - b1air@uw.edu
+- **Maria Politi** - politim@uw.edu
+- **Brenden Pelkie** - bgpelkie@uw.edu
+- **Sterling G. Baird** - sterling.baird@utoronto.ca
 
-This project has been set up using PyScaffold 4.5. For details and usage
-information on PyScaffold see https://pyscaffold.org/.
